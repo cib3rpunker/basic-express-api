@@ -1,5 +1,12 @@
+const path = require('path');
+// 💛LINUX   folder/file.jpg/
+// 💙WINDOWS folder\file.jpg\
+
 function getMessages(req, res) {
-  res.send('<ul><li>Hello Albert!</li></ul>');
+  res.sendFile(
+    path.join(__dirname, '..', 'public', 'santasDeath_Jakub Rozalski.jpg')
+  );
+  // res.send('<ul><li>Hello Albert!</li></ul>');
 }
 
 function postMessages(req, res) {
